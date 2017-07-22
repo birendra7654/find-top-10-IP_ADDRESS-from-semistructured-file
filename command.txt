@@ -1,0 +1,65 @@
+cat access.log.13 | python mapper.py | sort | python reducer.py
+
+hadoop jar /home/vagrant/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -file /home/vagrant/mapper.py /home/vagrant/reducer.py -mapper "python mapper.py" -reducer "python reducer.py" -input /user/vagrant/access.log -output /user/vagrant/access_log_output
+
+
+
+hdfs namenode -format
+hdfs dfs -mkdir /user
+hdfs dfs -mkdir /user
+hdfs dfs -mkdir /user/vagrant
+hdfs dfs -put ~/hadoop/etc/hadoop input
+hdfs dfs -put ~/hadoop/etc/hadoop/ input
+hdfs dfs -put ~/hadoop/etc/hadoop input
+hdfs dfs -put ~/hadoop/sbin input
+hdfs dfs -cat output/*
+hdfs dfs -cat output/*
+hdfs dfs -cat output
+hdfs dfs -cat output/*
+hdfs dfs -get output output
+hdfs dfs -put ~/hadoop/etc/hadoop input
+hdfs dfs -mkdir /user
+hdfs dfs -mkdir /user/vagrant
+hdfs dfs -put ~/hadoop/etc/hadoop /user/vagrant/input
+hdfs dfs -mkdir /user
+hdfs dfs -mkdir /user/vagrant
+hdfs dfs -put ~/hadoop/etc/hadoop /user/vagrant/input
+hdfs dfs -get output output
+hdfs dfs -cat output/*
+hdfs dfs -get output output1
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/input output ‘dfs[a-z.]+’
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/input output ‘dfs[a-z.]+’
+hdfs dfs -cat /user/vagrant/output/*
+hdfs dfs -cat output/*
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/input output ‘dfs[a-z.]+’
+hdfs dfs -cat output/*
+hdfs dfs -get output output
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/input /user/vagrant/output "dfs[a-z.]+"
+hdfs dfs -cat output/*
+hdfs dfs -put ~/hadoop/etc/hadoop /user/vagrant/input
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/input /user/vagrant/output "dfs[a-z.]+"
+hdfs dfs -cat output/*
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/input /user/vagrant/output "dfs[a-z.]+"
+hdfs dfs -put ~/hadoop/etc/hadoop /user/vagrant/input
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/input /user/vagrant/output "dfs[a-z.]+"
+hdfs dfs -cat output/*
+hdfs dfs -get output output
+hdfs dfs -put ~/ntop_log.log /user/vagrant/ntop
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/ntop /user/vagrant/output1 "dfs[a-z.]+"
+hdfs dfs -cat output/*
+hdfs dfs -cat output1/*
+hdfs dfs -put ~/ntop_log.log /user/vagrant/ntop
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/ntop /user/vagrant/output 'dfs[a-z.]+'
+hdfs dfs -put ./logs/hadoop-vagrant-datanode-vagrant-ubuntu-trusty-64.log /user/vagrant/hadoop-log
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar grep /user/vagrant/hadoop-log /user/vagrant/output 'dfs[a-z.]+'
+hdfs dfs -get output output
+
+hdfs dfs -put ~/FL_insurance_sample.csv /user/vagrant/insurance
+hdfs namenode -format
+hdfs dfs -put ~/access.log.13 /user/vagrant/access.log
+hdfs dfs -mkdir /user
+hdfs dfs -mkdir /user/vagrant
+hdfs dfs -put /user/vagrant/access.log access.log.13 
+hdfs dfs -put access.log.13 /user/vagrant/access.log 
+hdfs dfs -cat /user/vagrant/access_log_output
+hdfs dfs -cat /user/vagrant/access_log_output/*
